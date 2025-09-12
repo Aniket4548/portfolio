@@ -1,42 +1,254 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniket Kumar | Data & ML Engineer</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .nav-links a.active {
+                color: var(--primary-color) !important;
+                border-bottom: 2px solid var(--primary-color);
+                padding-bottom: 2px;
+            }
+        </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="importmap">
 
-        #fullscreen {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
-    <title>Aniket's Portfolio</title>
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
 <body>
-    <iframe id="fullscreen" src="https://gamma.app/embed/1tzuxi63iunbluv" allow="fullscreen" title="Aniket Kumar"></iframe>
 
-    <script>
-        var iframe = document.getElementById('fullscreen');
+    <div class="background-blobs">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
 
-        function toggleFullscreen() {
-            if (iframe.requestFullscreen) {
-                iframe.requestFullscreen();
-            } else if (iframe.mozRequestFullScreen) {
-                iframe.mozRequestFullScreen();
-            } else if (iframe.webkitRequestFullscreen) {
-                iframe.webkitRequestFullscreen();
-            } else if (iframe.msRequestFullscreen) {
-                iframe.msRequestFullscreen();
-            }
-        }
+    <header id="main-header">
+        <nav class="container">
+            <a href="#hero" class="logo">AK</a>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        toggleFullscreen();
-    </script>
+    <main>
+        <section id="hero" class="hero-section container">
+            <div class="hero-content">
+                <p class="hero-intro">Hi, my name is</p>
+                <h1 class="hero-title">Aniket Kumar.</h1>
+                <h2 class="hero-subtitle">I build things with data.</h2>
+                <p class="hero-description">
+                    I'm a Data and Machine Learning Engineer specializing in building robust data pipelines, crafting insightful analytics, and developing AI-driven solutions. My passion lies in transforming raw data into actionable intelligence.
+                </p>
+                <div class="hero-socials">
+                    <a href="https://github.com/Aniket4548" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" style="width:2rem;height:2rem;filter:invert(80%);" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/aniket-kumar-4b1b68141/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(180deg);" />
+                    </a>
+                    <a href="https://public.tableau.com/app/profile/aniket.kumar7116/vizzes" target="_blank" rel="noopener noreferrer" aria-label="Tableau Public">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tableau.svg" alt="Tableau Public" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(180deg);" />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section container fade-in">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Associate Software Engineer @ Indoqubix Cloudtech</h3>
+                        <p class="timeline-period">May 2024 - June 2025</p>
+                        <p class="timeline-location">Noida, Uttar Pradesh</p>
+                        <ul>
+                            <li>Designed and implemented Python-based end-to-end data pipelines for seamless cross-server data integration, enabling automated Power BI report generation.</li>
+                            <li>Refactored SQL views and stored procedures, simplifying data transformation logic and reducing query execution time by 30%.</li>
+                            <li>Automated and streamlined ELT workflows using Google BigQuery and Cloud Data Fusion, enhancing data processing efficiency.</li>
+                            <li>Built a custom internal reporting platform with a MySQL database, integrating external APIs via Python for daily data ingestion.</li>
+                            <li>Led the end-to-end implementation of the Tuva Project (healthcare), leveraging DBT for claims and clinical data pipelines.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Database Engineer Intern @ DSEU University</h3>
+                        <p class="timeline-period">Apr 2024 - May 2024</p>
+                        <p class="timeline-location">New Delhi, Delhi</p>
+                        <ul>
+                            <li>Designed, deployed, and managed a Microsoft SQL Server database for an internal university application, ensuring high availability and performance.</li>
+                            <li>Integrated and optimized back-end database infrastructure, resulting in improved application response times and uptime.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Data Analyst Intern @ Ministry of Heavy Industries</h3>
+                        <p class="timeline-period">May 2023 - July 2023</p>
+                        <p class="timeline-location">New Delhi, Delhi</p>
+                        <ul>
+                            <li>Cleaned, transformed, and analyzed government datasets using Python and Power BI, applying machine learning models to extract actionable insights.</li>
+                            <li>Conducted website performance audits, pinpointing bottlenecks and recommending technical and security enhancements.</li>
+                            <li>Developed an interactive Power BI dashboard to visually communicate key metrics, increasing stakeholder engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section container fade-in">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Virtual Kitchen</h3>
+                    <p class="project-subtitle">AI-Powered Recipe Recommendation</p>
+                    <ul>
+                      <li>Developed a user-friendly AI-driven web application that analyzes available ingredients and recommends recipes.</li>
+                      <li>Minimized food waste by 15% and supported sustainable home cooking by implementing meal-portion calculators.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Abstract Based Text Summarization</h3>
+                    <p class="project-subtitle">NLP-Powered Document Summarization</p>
+                    <ul>
+                      <li>Designed and deployed an NLP-based text summarization system using Python and transformer models like BERT.</li>
+                      <li>Enabled automatic, high-quality summaries of news articles, documents, and research papers for stakeholders.</li>
+                    </ul>
+                </div>
+                <div class="project-card">
+                    <h3>Fearfall.Ai</h3>
+                    <p class="project-subtitle">Hackathon Project for Public Speaking</p>
+                    <ul>
+                      <li>Led development of an AI-powered platform that analyzes user presentations and automatically generates PowerPoint summaries.</li>
+                      <li>Reduced manual workload by 15 hours per week and accelerated slide creation by 60%.</li>
+                      <li>Integrated a Q&A bot for topic-specific queries and built a community forum for user engagement and support.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="content-section container fade-in">
+            <h2 class="section-title">Skills & Interests</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" style="width:2rem;height:2rem;filter:invert(80%);" /><span>Python</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg" alt="SQL" style="width:2rem;height:2rem;filter:invert(80%);" /><span>SQL</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg" alt="Power BI" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(180deg);" /><span>Power BI</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tableau.svg" alt="Tableau" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(180deg);" /><span>Tableau</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="Excel" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(90deg);" /><span>Excel</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fastapi.svg" alt="FastAPI" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(120deg);" /><span>FastAPI</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Engineering</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/dbt.svg" alt="DBT" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(10deg);" /><span>DBT</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlebigquery.svg" alt="Google BigQuery" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(200deg);" /><span>Google BigQuery</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlecloud.svg" alt="Cloud Data Fusion" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(200deg);" /><span>Cloud Data Fusion</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/numpy.svg" alt="Natural Language Processing" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(200deg);" /><span>Natural Language Processing</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/scikitlearn.svg" alt="Scikit-learn" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(30deg);" /><span>Scikit-learn</span></div>
+                        <div class="skill-item"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tensorflow.svg" alt="TensorFlow" style="width:2rem;height:2rem;filter:invert(60%) sepia(100%) saturate(300%) hue-rotate(30deg);" /><span>TensorFlow</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="additional-skills">
+                <div>
+                    <h4>Languages</h4>
+                    <ul>
+                        <li>English (Fluent)</li>
+                        <li>Hindi (Native)</li>
+                        <li>Japanese (Beginner)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Soft Skills</h4>
+                     <ul>
+                        <li>Critical Thinking & Analytical Skills</li>
+                        <li>Team Collaboration & Communication</li>
+                        <li>Presentation & Storytelling</li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <section id="education" class="content-section container fade-in">
+            <h2 class="section-title">Education</h2>
+            <div class="education-container">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Delhi Skill and Entrepreneurship University</h3>
+                        <p>Dec 2021 - Sep 2024</p>
+                    </div>
+                    <p class="education-degree">B.Sc. Data Analytics - CGPA 8.2</p>
+                    <ul>
+                        <li>Data Science & Analytics: Data Collection, Data Visualization, Time Series Forecasting, Data Warehousing.</li>
+                        <li>Programming & Tools: Python, Power BI, Advanced Excel, Web Development.</li>
+                        <li>Machine Learning & AI: Deep Learning, NLP, Model Deployment and Cloud Management.</li>
+                    </ul>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>East Point School</h3>
+                        <p>Feb 2020 - Mar 2021</p>
+                    </div>
+                    <p class="education-degree">Senior Secondary (Science Stream) - 81%</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="content-section container fade-in">
+            <h2 class="section-title">Resume</h2>
+                        <div style="text-align:center;">
+                                <p style="margin-bottom:2rem;">You can view or download my latest resume below:</p>
+                                <a href="Aniket_kumar_Data_Engineer.pdf" target="_blank" class="btn" style="margin-top:0;">View / Download Resume (PDF)</a>
+                                <div style="margin:2rem auto 0 auto; width:50vw; min-width:320px; max-width:700px; display:flex; flex-direction:column; align-items:center;">
+                                    <iframe src="Aniket_kumar_Data_Engineer.pdf" width="100%" height="500px" style="border:1px solid var(--border-color); border-radius:8px; background:#fff; display:block;" title="Resume PDF" loading="lazy"></iframe>
+                                    <p style="color:var(--text-muted);font-size:0.95rem;margin-top:0.5rem; text-align:center;">If the PDF does not display, <a href="Aniket_kumar_Data_Engineer.pdf" target="_blank">click here to open it in a new tab</a>.</p>
+                                </div>
+                        </div>
+        </section>
+
+        <section id="contact" class="content-section container fade-in">
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="contact-container">
+                                <p>
+                                    I'm always happy to connect! Whether you want to discuss a project, collaborate, or just say hello, feel free to reach out through any of the options below.
+                                </p>
+                                <ul style="list-style: none; padding: 0; margin: 2rem 0; display: flex; flex-direction: column; gap: 1.5rem; align-items: center;">
+                                    <li>
+                                        <strong>Email:</strong> <a href="mailto:kumaraniket8802@gmail.com">kumaraniket8802@gmail.com</a>
+                                    </li>
+                                    <li>
+                                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aniket-kumar-25b583232/" target="_blank" rel="noopener noreferrer">Aniket Kumar</a>
+                                    </li>
+                                    <li>
+                                        <strong>GitHub:</strong> <a href="https://github.com/Aniket4548" target="_blank" rel="noopener noreferrer">Aniket4548</a>
+                                    </li>
+                                </ul>
+                                <p style="color: var(--text-muted); margin-top: 2rem;">I usually respond within a day or two. Looking forward to hearing from you!</p>
+                        </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
