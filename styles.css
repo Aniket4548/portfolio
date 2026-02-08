@@ -1,3 +1,12 @@
+/* Hide scrollbars but keep scrolling */
+body {
+  -ms-overflow-style: none; /* IE/Edge legacy */
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Edge */
+}
+
 
 :root {
   --bg-color: #0f172a; /* slate-900 */
