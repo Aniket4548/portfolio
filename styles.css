@@ -131,6 +131,11 @@ ul {
   color: var(--text-color);
   font-weight: 500;
 }
+.nav-links a.active {
+  color: var(--primary-color) !important;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 2px;
+}
 
 /* --- Hero Section --- */
 .hero-section {
@@ -191,6 +196,14 @@ ul {
 .hero-socials a:hover svg {
   transform: scale(1.1) translateY(-2px);
   color: var(--primary-color);
+}
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.hero-socials a:hover .social-icon {
+  transform: scale(1.1) translateY(-2px);
 }
 
 /* --- General Section Styles --- */
@@ -378,6 +391,28 @@ ul {
   height: 2rem;
   color: var(--primary-color);
 }
+.skill-icon {
+  width: 2rem;
+  height: 2rem;
+}
+.icon-muted {
+  filter: invert(80%);
+}
+.icon-cyan {
+  filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(180deg);
+}
+.icon-green {
+  filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(90deg);
+}
+.icon-teal {
+  filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(120deg);
+}
+.icon-amber {
+  filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(30deg);
+}
+.icon-blue {
+  filter: invert(60%) sepia(100%) saturate(300%) hue-rotate(200deg);
+}
 
 .additional-skills {
     margin-top: 3rem;
@@ -461,6 +496,51 @@ ul {
 .contact-container p {
   color: var(--text-muted);
   margin-bottom: 2rem;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.contact-note {
+  color: var(--text-muted);
+  margin-top: 2rem;
+}
+
+/* Resume Section */
+.resume-center {
+  text-align: center;
+}
+.resume-intro {
+  margin-bottom: 2rem;
+}
+.resume-button {
+  margin-top: 0;
+}
+.resume-frame {
+  margin: 2rem auto 0 auto;
+  width: 50vw;
+  min-width: 320px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resume-iframe {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #fff;
+  display: block;
+}
+.resume-fallback {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  text-align: center;
 }
 
 .contact-form {
