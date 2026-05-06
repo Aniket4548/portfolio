@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aniket Kumar | Data & ML Engineer</title>
-        <link rel="stylesheet" href="styles.css">
+    <title>Aniket Kumar | Data & AI Engineer</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -32,13 +32,17 @@
     </header>
 
     <main>
+
+        <!-- ── HERO ─────────────────────────────────────────────── -->
         <section id="hero" class="hero-section container">
             <div class="hero-content">
                 <p class="hero-intro">Hi, my name is</p>
                 <h1 class="hero-title">Aniket Kumar.</h1>
-                <h2 class="hero-subtitle">I build things with data.</h2>
+                <h2 class="hero-subtitle">I build end-to-end data & AI systems.</h2>
                 <p class="hero-description">
-                    I'm a Data and Machine Learning Engineer specializing in building robust data pipelines, crafting insightful analytics, and developing AI-driven solutions. My passion lies in transforming raw data into actionable intelligence.
+                    I'm a Data & AI Engineer with 2+ years of production experience building
+                    cloud-native data pipelines, Medallion Architecture systems, and LLM-powered
+                    applications. From raw data ingestion to AI-driven insights — I own the full stack.
                 </p>
                 <div class="hero-socials">
                     <a href="https://github.com/Aniket4548" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -47,197 +51,429 @@
                     <a href="https://www.linkedin.com/in/aniket-kumar-4b1b68141/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <img class="social-icon icon-cyan" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/linkedin.svg" alt="LinkedIn" />
                     </a>
-                    <a href="https://public.tableau.com/app/profile/aniket.kumar7116/vizzes" target="_blank" rel="noopener noreferrer" aria-label="Tableau Public">
-                        <img class="social-icon icon-cyan" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tableau.svg" alt="Tableau Public" />
-                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- ── EXPERIENCE ────────────────────────────────────────── -->
         <section id="experience" class="content-section container fade-in">
             <h2 class="section-title">Work Experience</h2>
             <div class="timeline">
+
+                <!-- Acobloom -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Associate, Centre of Excellence @ Acobloom International</h3>
+                        <p class="timeline-period">Sept 2025 – Present</p>
+                        <p class="timeline-location">Noida, Uttar Pradesh</p>
+                        <ul>
+                            <li>Independently evaluated and deployed an OCR-based financial intelligence pipeline — benchmarking Tesseract OCR, Python-native libraries, and cloud AI vision models — automating extraction and classification of bank and credit card transactions into standardized financial classes (Income, Expense, Asset, Liability), eliminating manual processing entirely.</li>
+                            <li>Drove LLM selection for a production LangChain-powered BI chatbot via rigorous performance-to-cost benchmarking; architected the production database layer enabling contextual natural-language query responses for business stakeholders.</li>
+                            <li>Architected a config-driven, multi-tenant Medallion Architecture (Bronze/Silver/Gold) pipeline on Azure Functions for a UK dental network (3 locations), processing 10,000+ records daily across 10+ automated tables — onboarding new clients requires only a single API key update, with Power BI dashboards refreshing automatically on completion.</li>
+                            <li>Engineered a multi-API ingestion system across 4 platforms (Dentally, Xero, Boxly, Excel) with 50+ individual connectors; designed database schemas and SQL views generating 100+ KPIs powering client-facing Power BI dashboards.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Indoqubix -->
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <h3>Associate Software Engineer @ Indoqubix Cloudtech</h3>
-                        <p class="timeline-period">May 2024 - June 2025</p>
+                        <p class="timeline-period">May 2024 – June 2025</p>
                         <p class="timeline-location">Noida, Uttar Pradesh</p>
                         <ul>
-                            <li>Designed and implemented Python-based end-to-end data pipelines for seamless cross-server data integration, enabling automated Power BI report generation.</li>
-                            <li>Refactored SQL views and stored procedures, simplifying data transformation logic and reducing query execution time by 30%.</li>
-                            <li>Automated and streamlined ELT workflows using Google BigQuery and Cloud Data Fusion, enhancing data processing efficiency.</li>
-                            <li>Built a custom internal reporting platform with a MySQL database, integrating external APIs via Python for daily data ingestion.</li>
-                            <li>Led the end-to-end implementation of the Tuva Project (healthcare), leveraging DBT for claims and clinical data pipelines.</li>
+                            <li>Built Python ETL pipelines processing 500K+ daily records for a New Zealand taxi company with cross-server integration, automating end-to-end reporting across a 15-page Power BI dashboard — replacing a fully manual workflow.</li>
+                            <li>Designed and automated 25+ ELT workflows on Google BigQuery and Cloud Data Fusion, replacing manual Excel-based processes and saving 10+ hours of team effort weekly.</li>
+                            <li>Built an internal engineering performance platform integrating GitHub and Atlassian Jira APIs via Windows Task Scheduler, delivering Power BI dashboards tracking commits, sprint reports, ticket statuses, and story assignments for 30+ employees.</li>
+                            <li>Refactored SQL views and stored procedures for a US-based NGO, improving reporting efficiency and reducing query execution time by 30%.</li>
+                            <li>Led DBT-based healthcare pipelines (Tuva Project), delivering 4 client-facing Power BI dashboards (15+ pages) subsequently licensed as part of the company's commercial product offering.</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Ministry -->
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Database Engineer Intern @ DSEU University</h3>
-                        <p class="timeline-period">Apr 2024 - May 2024</p>
-                        <p class="timeline-location">New Delhi, Delhi</p>
-                        <ul>
-                            <li>Designed, deployed, and managed a Microsoft SQL Server database for an internal university application, ensuring high availability and performance.</li>
-                            <li>Integrated and optimized back-end database infrastructure, resulting in improved application response times and uptime.</li>
-                        </ul>
-                    </div>
-                </div>
-                 <div class="timeline-item">
-                    <div class="timeline-content">
                         <h3>Data Analyst Intern @ Ministry of Heavy Industries</h3>
-                        <p class="timeline-period">May 2023 - July 2023</p>
+                        <p class="timeline-period">May 2023 – July 2023</p>
                         <p class="timeline-location">New Delhi, Delhi</p>
                         <ul>
-                            <li>Cleaned, transformed, and analyzed government datasets using Python and Power BI, applying machine learning models to extract actionable insights.</li>
-                            <li>Conducted website performance audits, pinpointing bottlenecks and recommending technical and security enhancements.</li>
-                            <li>Developed an interactive Power BI dashboard to visually communicate key metrics, increasing stakeholder engagement.</li>
+                            <li>Cleaned, transformed, and analyzed government datasets using Python and Power BI, applying machine learning models to extract actionable business insights.</li>
+                            <li>Developed an interactive Power BI dashboard to visually communicate key metrics, increasing stakeholder engagement and data-driven decision-making.</li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </section>
 
+        <!-- ── PROJECTS ───────────────────────────────────────────── -->
         <section id="projects" class="content-section container fade-in">
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Fearfall.Ai</h3>
+                    <p class="project-subtitle">AI-Powered Public Speaking Platform · Hackathon</p>
+                    <ul>
+                        <li>Led development of an AI platform that analyzes user presentations and auto-generates PowerPoint summaries, cutting slide creation time by 60% and saving 15+ hours/week.</li>
+                        <li>Integrated a domain-specific Q&A bot for topic queries and built a peer community forum for engagement and support.</li>
+                    </ul>
+                    <div class="project-links" style="margin-top: 1rem;">
+                        <a href="https://github.com/Aniket4548/Fearfall.AI" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Abstract Text Summarization</h3>
+                    <p class="project-subtitle">NLP · BERT Transformers · Live & Deployed</p>
+                    <ul>
+                        <li>Designed and deployed a production NLP system using Python and BERT-based transformer models to generate high-quality abstractive summaries of news articles and research papers.</li>
+                        <li>Publicly deployed and operational — demonstrating end-to-end ML pipeline ownership from model selection through production deployment.</li>
+                    </ul>
+                    <div class="project-links" style="margin-top: 1rem;">
+                        <a href="https://github.com/Aniket4548/Text-summarization" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                    </div>
+                </div>
+
                 <div class="project-card">
                     <h3>Virtual Kitchen</h3>
                     <p class="project-subtitle">AI-Powered Recipe Recommendation</p>
                     <ul>
-                      <li>Developed a user-friendly AI-driven web application that analyzes available ingredients and recommends recipes.</li>
-                      <li>Minimized food waste by 15% and supported sustainable home cooking by implementing meal-portion calculators.</li>
+                        <li>Built an AI-driven web application that analyzes available ingredients and recommends recipes with dynamic meal-portion calculators, supporting sustainable home cooking.</li>
                     </ul>
+                    <div class="project-links" style="margin-top: 1rem;">
+                        <a href="https://github.com/Aniket4548/Virtual_Kitchen" target="_blank" rel="noopener noreferrer">GitHub →</a>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Abstract Based Text Summarization</h3>
-                    <p class="project-subtitle">NLP-Powered Document Summarization</p>
-                    <ul>
-                      <li>Designed and deployed an NLP-based text summarization system using Python and transformer models like BERT.</li>
-                      <li>Enabled automatic, high-quality summaries of news articles, documents, and research papers for stakeholders.</li>
-                    </ul>
-                </div>
-                <div class="project-card">
-                    <h3>Fearfall.Ai</h3>
-                    <p class="project-subtitle">Hackathon Project for Public Speaking</p>
-                    <ul>
-                      <li>Led development of an AI-powered platform that analyzes user presentations and automatically generates PowerPoint summaries.</li>
-                      <li>Reduced manual workload by 15 hours per week and accelerated slide creation by 60%.</li>
-                      <li>Integrated a Q&A bot for topic-specific queries and built a community forum for user engagement and support.</li>
-                    </ul>
-                </div>
+
             </div>
         </section>
-        
+
+        <!-- ── SKILLS ─────────────────────────────────────────────── -->
         <section id="skills" class="content-section container fade-in">
-            <h2 class="section-title">Skills & Interests</h2>
+            <h2 class="section-title">Skills</h2>
             <div class="skills-container">
+
                 <div class="skill-category">
-                    <h3>Programming & Tools</h3>
+                    <h3>Programming & Query</h3>
                     <div class="skills-grid">
                         <div class="skill-item"><img class="skill-icon icon-muted" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" alt="Python" /><span>Python</span></div>
                         <div class="skill-item"><img class="skill-icon icon-muted" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg" alt="SQL" /><span>SQL</span></div>
-                        <div class="skill-item"><img class="skill-icon icon-cyan" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg" alt="Power BI" /><span>Power BI</span></div>
-                        <div class="skill-item"><img class="skill-icon icon-cyan" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tableau.svg" alt="Tableau" /><span>Tableau</span></div>
-                        <div class="skill-item"><img class="skill-icon icon-green" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="Excel" /><span>Excel</span></div>
-                        <div class="skill-item"><img class="skill-icon icon-teal" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/fastapi.svg" alt="FastAPI" /><span>FastAPI</span></div>
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3>Data Engineering</h3>
+                    <h3>AI & Machine Learning</h3>
                     <div class="skills-grid">
-                        <div class="skill-item"><img class="skill-icon icon-amber" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/dbt.svg" alt="DBT" /><span>DBT</span></div>
-                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlebigquery.svg" alt="Google BigQuery" /><span>Google BigQuery</span></div>
-                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlecloud.svg" alt="Cloud Data Fusion" /><span>Cloud Data Fusion</span></div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Machine Learning & AI</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/numpy.svg" alt="Natural Language Processing" /><span>Natural Language Processing</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-muted" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/langchain.svg" alt="LangChain" /><span>LangChain</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-muted" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" alt="OpenAI API" /><span>OpenAI API</span></div>
                         <div class="skill-item"><img class="skill-icon icon-amber" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/scikitlearn.svg" alt="Scikit-learn" /><span>Scikit-learn</span></div>
                         <div class="skill-item"><img class="skill-icon icon-amber" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tensorflow.svg" alt="TensorFlow" /><span>TensorFlow</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/numpy.svg" alt="NLP" /><span>NLP</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-muted" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ollama.svg" alt="Ollama" /><span>Ollama</span></div>
                     </div>
                 </div>
+
+                <div class="skill-category">
+                    <h3>Data Engineering & Cloud</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftazure.svg" alt="Azure Functions" /><span>Azure Functions</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlebigquery.svg" alt="Google BigQuery" /><span>Google BigQuery</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-amber" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/dbt.svg" alt="DBT" /><span>DBT</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlecloud.svg" alt="Cloud Data Fusion" /><span>Cloud Data Fusion</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-muted" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/postgresql.svg" alt="PostgreSQL" /><span>PostgreSQL</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-muted" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mysql.svg" alt="MySQL" /><span>MySQL</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftsqlserver.svg" alt="SQL Server" /><span>SQL Server</span></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Analytics & BI</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item"><img class="skill-icon icon-cyan" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/powerbi.svg" alt="Power BI" /><span>Power BI</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-cyan" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tableau.svg" alt="Tableau" /><span>Tableau</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-green" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoftexcel.svg" alt="Excel" /><span>Excel (Advanced)</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-amber" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/grafana.svg" alt="Grafana" /><span>Grafana</span></div>
+                        <div class="skill-item"><img class="skill-icon icon-blue" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/looker.svg" alt="Looker Studio" /><span>Looker Studio</span></div>
+                    </div>
+                </div>
+
             </div>
-            <div class="additional-skills">
-                <div>
-                    <h4>Languages</h4>
-                    <ul>
-                        <li>English (Fluent)</li>
-                        <li>Hindi (Native)</li>
-                        <li>Japanese (Beginner)</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Soft Skills</h4>
-                     <ul>
-                        <li>Critical Thinking & Analytical Skills</li>
-                        <li>Team Collaboration & Communication</li>
-                        <li>Presentation & Storytelling</li>
-                    </ul>
-                </div>
-             </div>
         </section>
 
+        <!-- ── EDUCATION ──────────────────────────────────────────── -->
         <section id="education" class="content-section container fade-in">
             <h2 class="section-title">Education</h2>
             <div class="education-container">
+
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Chandigarh University (Online)</h3>
+                        <p>Feb 2026 – Present · Expected 2028</p>
+                    </div>
+                    <p class="education-degree">MCA — Machine Learning & Artificial Intelligence</p>
+                    <ul>
+                        <li>Specialization in ML, Deep Learning, NLP, and AI Systems.</li>
+                        <li>Pursuing alongside full-time AI engineering work to deepen model-building expertise.</li>
+                    </ul>
+                </div>
+
                 <div class="education-card">
                     <div class="education-header">
                         <h3>Delhi Skill and Entrepreneurship University</h3>
-                        <p>Dec 2021 - Sep 2024</p>
+                        <p>Dec 2021 – Sept 2024</p>
                     </div>
-                    <p class="education-degree">B.Sc. Data Analytics - CGPA 8.2</p>
+                    <p class="education-degree">B.Sc. Data Analytics · CGPA: 8.7</p>
                     <ul>
-                        <li>Data Science & Analytics: Data Collection, Data Visualization, Time Series Forecasting, Data Warehousing.</li>
+                        <li>Data Science & Analytics: Data Collection, Visualization, Time Series Forecasting, Data Warehousing.</li>
                         <li>Programming & Tools: Python, Power BI, Advanced Excel, Web Development.</li>
                         <li>Machine Learning & AI: Deep Learning, NLP, Model Deployment and Cloud Management.</li>
                     </ul>
                 </div>
-                <div class="education-card">
-                    <div class="education-header">
-                        <h3>East Point School</h3>
-                        <p>Feb 2020 - Mar 2021</p>
-                    </div>
-                    <p class="education-degree">Senior Secondary (Science Stream) - 81%</p>
+
+            </div>
+        </section>
+
+        <!-- ── RESUME ─────────────────────────────────────────────── -->
+        <section id="resume" class="content-section container fade-in">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-center">
+                <p class="resume-intro">View or download my latest resume below.</p>
+                <a href="Aniket_kumar_Data_Engineer.pdf" target="_blank" class="btn resume-button">View / Download Resume (PDF)</a>
+                <div class="resume-frame">
+                    <iframe src="Aniket_kumar_Data_Engineer.pdf" width="100%" height="500px" class="resume-iframe" title="Resume PDF" loading="lazy"></iframe>
+                    <p class="resume-fallback">If the PDF does not display, <a href="Aniket_kumar_Data_Engineer.pdf" target="_blank">click here to open it in a new tab</a>.</p>
                 </div>
             </div>
         </section>
 
-        <section id="resume" class="content-section container fade-in">
-            <h2 class="section-title">Resume</h2>
-                        <div class="resume-center">
-                                <p class="resume-intro">You can view or download my latest resume below:</p>
-                                <a href="Aniket_kumar_Data_Engineer.pdf" target="_blank" class="btn resume-button">View / Download Resume (PDF)</a>
-                                <div class="resume-frame">
-                                    <iframe src="Aniket_kumar_Data_Engineer.pdf" width="100%" height="500px" class="resume-iframe" title="Resume PDF" loading="lazy"></iframe>
-                                    <p class="resume-fallback">If the PDF does not display, <a href="Aniket_kumar_Data_Engineer.pdf" target="_blank">click here to open it in a new tab</a>.</p>
-                                </div>
+        <!-- ── CONTACT ────────────────────────────────────────────── -->
+        <section id="contact" class="content-section container fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <p>
+                    Have a project in mind, want to collaborate, or just want to say hello?
+                    Drop me a message below and I'll get back to you within a day or two.
+                </p>
+
+                <!--
+                    ╔══════════════════════════════════════════════════════╗
+                    ║  HOW TO ACTIVATE THIS FORM (takes 2 minutes):       ║
+                    ║  1. Go to https://web3forms.com                     ║
+                    ║  2. Enter your email and click "Create Access Key"  ║
+                    ║  3. Copy the key and paste it below where it says   ║
+                    ║     YOUR_ACCESS_KEY_HERE                            ║
+                    ╚══════════════════════════════════════════════════════╝
+                -->
+                <form id="contact-form" class="contact-form" novalidate>
+                    <input type="hidden" name="access_key" value="a3326480-0ab7-4ce5-bebc-aeb7efb7a229">
+                    <input type="hidden" name="subject" value="New message from portfolio — Aniket Kumar">
+                    <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                    <input type="checkbox" name="botcheck" style="display:none;">
+
+                    <div class="form-group-grid">
+                        <div class="form-group">
+                            <label for="name">Your Name <span class="required-star" aria-hidden="true">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" autocomplete="name" maxlength="80">
+                            <span class="field-error" id="name-error"></span>
                         </div>
+                        <div class="form-group">
+                            <label for="email">Your Email <span class="required-star" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" autocomplete="email" maxlength="120">
+                            <span class="field-error" id="email-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject-field">Subject <span class="required-star" aria-hidden="true">*</span></label>
+                        <input type="text" id="subject-field" name="user_subject" placeholder="Project collaboration, Job opportunity, Just saying hi..." maxlength="120">
+                        <span class="field-error" id="subject-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required-star" aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="6" placeholder="Tell me what's on your mind..." maxlength="2000"></textarea>
+                        <div class="char-counter" id="msg-counter">0 / 2000</div>
+                        <span class="field-error" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn" id="submit-btn">Send Message</button>
+
+                    <div id="form-success" style="display:none; text-align:center; color: var(--primary-color); padding: 1rem; border: 1px solid var(--primary-color); border-radius: 6px;">
+                        ✓ Message sent! I'll get back to you within a day or two.
+                    </div>
+                    <div id="form-error" style="display:none; text-align:center; color: #f87171; padding: 1rem; border: 1px solid #f87171; border-radius: 6px;">
+                        Something went wrong. Please email me directly at <a href="mailto:kumaraniket8802@gmail.com">kumaraniket8802@gmail.com</a>
+                    </div>
+                </form>
+
+                <p class="contact-note contact-direct-email">
+                    Prefer direct contact?
+                    <a href="mailto:kumaraniket8802@gmail.com">kumaraniket8802@gmail.com</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://www.linkedin.com/in/aniket-kumar-4b1b68141/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    &nbsp;·&nbsp;
+                    <a href="https://github.com/Aniket4548" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </p>
+            </div>
         </section>
 
-        <section id="contact" class="content-section container fade-in">
-                        <h2 class="section-title">Get In Touch</h2>
-                        <div class="contact-container">
-                                <p>
-                                    I'm always happy to connect! Whether you want to discuss a project, collaborate, or just say hello, feel free to reach out through any of the options below.
-                                </p>
-                                <ul class="contact-list">
-                                    <li>
-                                        <strong>Email:</strong> <a href="mailto:kumaraniket8802@gmail.com">kumaraniket8802@gmail.com</a>
-                                    </li>
-                                    <li>
-                                        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aniket-kumar-25b583232/" target="_blank" rel="noopener noreferrer">Aniket Kumar</a>
-                                    </li>
-                                    <li>
-                                        <strong>GitHub:</strong> <a href="https://github.com/Aniket4548" target="_blank" rel="noopener noreferrer">Aniket4548</a>
-                                    </li>
-                                </ul>
-                                <p class="contact-note">I usually respond within a day or two. Looking forward to hearing from you!</p>
-                        </div>
-        </section>
     </main>
 
     <script src="scripts.js"></script>
+    <script>
+    // ── Contact Form — Validation + Web3Forms ────────────────────────
+    const form        = document.getElementById('contact-form');
+    const submitBtn   = document.getElementById('submit-btn');
+    const successMsg  = document.getElementById('form-success');
+    const errorMsg    = document.getElementById('form-error');
+
+    const fields = {
+        name:    { el: document.getElementById('name'),         errEl: document.getElementById('name-error') },
+        email:   { el: document.getElementById('email'),        errEl: document.getElementById('email-error') },
+        subject: { el: document.getElementById('subject-field'),errEl: document.getElementById('subject-error') },
+        message: { el: document.getElementById('message'),      errEl: document.getElementById('message-error') }
+    };
+
+    // ── Validators ──────────────────────────────────────────────────
+    const rules = {
+        name: (v) => {
+            if (!v) return 'Name is required.';
+            if (v.length < 2) return 'Name must be at least 2 characters.';
+            if (v.length > 80) return 'Name must be under 80 characters.';
+            if (!/^[a-zA-Z\s'\-]+$/.test(v)) return 'Name can only contain letters, spaces, hyphens, or apostrophes.';
+            return '';
+        },
+        email: (v) => {
+            if (!v) return 'Email is required.';
+            // RFC 5322 simplified pattern
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) return 'Please enter a valid email address.';
+            if (v.length > 120) return 'Email must be under 120 characters.';
+            return '';
+        },
+        subject: (v) => {
+            if (!v) return 'Subject is required.';
+            if (v.length < 3) return 'Subject must be at least 3 characters.';
+            if (v.length > 120) return 'Subject must be under 120 characters.';
+            return '';
+        },
+        message: (v) => {
+            if (!v) return 'Message is required.';
+            if (v.length < 10) return 'Message must be at least 10 characters.';
+            if (v.length > 2000) return 'Message must be under 2000 characters.';
+            return '';
+        }
+    };
+
+    // ── Show / clear field error ────────────────────────────────────
+    function setFieldState(key, errorText) {
+        const { el, errEl } = fields[key];
+        errEl.textContent = errorText;
+        if (errorText) {
+            el.classList.add('input-error');
+            el.classList.remove('input-success');
+            el.setAttribute('aria-invalid', 'true');
+        } else {
+            el.classList.remove('input-error');
+            el.classList.add('input-success');
+            el.setAttribute('aria-invalid', 'false');
+        }
+        return !errorText; // true = valid
+    }
+
+    function validateField(key) {
+        const val = fields[key].el.value.trim();
+        const err = rules[key](val);
+        return setFieldState(key, err);
+    }
+
+    function validateAll() {
+        return Object.keys(fields)
+            .map(key => validateField(key))
+            .every(Boolean);
+    }
+
+    // ── Live validation — only after first blur ──────────────────────
+    Object.keys(fields).forEach(key => {
+        const el = fields[key].el;
+        let touched = false;
+
+        el.addEventListener('blur', () => {
+            touched = true;
+            validateField(key);
+        });
+
+        el.addEventListener('input', () => {
+            if (touched) validateField(key);
+            // Clear form-level messages on any change
+            successMsg.style.display = 'none';
+            errorMsg.style.display   = 'none';
+        });
+    });
+
+    // ── Character counter for message ────────────────────────────────
+    const msgEl      = fields.message.el;
+    const counterEl  = document.getElementById('msg-counter');
+    const MSG_LIMIT  = 2000;
+
+    msgEl.addEventListener('input', () => {
+        const len = msgEl.value.length;
+        counterEl.textContent = `${len} / ${MSG_LIMIT}`;
+        counterEl.classList.toggle('near-limit', len > MSG_LIMIT * 0.85);
+    });
+
+    // ── Form submit ──────────────────────────────────────────────────
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        successMsg.style.display = 'none';
+        errorMsg.style.display   = 'none';
+
+        // Force-touch all fields so errors show even if untouched
+        Object.keys(fields).forEach(key => fields[key].el.dispatchEvent(new Event('blur')));
+
+        if (!validateAll()) {
+            // Scroll to first error
+            const firstBad = Object.values(fields).find(f => f.el.classList.contains('input-error'));
+            if (firstBad) firstBad.el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return;
+        }
+
+        // Submit
+        submitBtn.disabled     = true;
+        submitBtn.textContent  = 'Sending…';
+
+        const formData = new FormData(form);
+        const payload  = JSON.stringify(Object.fromEntries(formData));
+
+        try {
+            const res    = await fetch('https://api.web3forms.com/submit', {
+                method:  'POST',
+                headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                body:    payload
+            });
+            const result = await res.json();
+
+            if (res.status === 200 && result.success) {
+                form.reset();
+                counterEl.textContent = `0 / ${MSG_LIMIT}`;
+                // Clear success states
+                Object.keys(fields).forEach(key => {
+                    fields[key].el.classList.remove('input-success', 'input-error');
+                });
+                successMsg.style.display = 'block';
+                successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            } else {
+                errorMsg.style.display = 'block';
+            }
+        } catch {
+            errorMsg.style.display = 'block';
+        } finally {
+            submitBtn.disabled    = false;
+            submitBtn.textContent = 'Send Message';
+        }
+    });
+    </script>
+
 </body>
 </html>
